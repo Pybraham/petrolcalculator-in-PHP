@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanken</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <form method="post" action="Tank 1.php">
+    <p>Mit diesem Formular werden die Kraftstoffkosten Ihres PKWs für 
+        einen Monat ermittelt.
+    </p>
+    <p>Bitte füllen Sie die nachfolgenden Eingabefelder aus:</p>
+    <br>
+    <select name="Kraftstoffsorte">
+        <option>Super</option>
+        <option>Super+</option>
+        <option>SuperE10</option>
+        <option>Diesel</option>
+    </select>Kraftstoffsorte <br><br>
+    <select name="Tankmonat">
+        <option>Januar</option>
+        <option>Februar</option>
+        <option>März</option>
+        <option>April</option>
+        <option>Mai</option>
+        <option>Juni</option>
+        <option>Juli</option>
+        <option>August</option>
+        <option>September</option>
+        <option>Oktober</option>
+        <option>November</option>
+        <option>Dezember</option>
+    </select>Tankmonat <br><br>
+    <table>
+        <tr>
+          <td><b>Nr</b></td>
+          <td><b>Tankfüllung</b></td>
+          <td><b>Zahlbetrag</b></td>
+        </tr>
+        <tr>
+          <td><b>1</b></td>
+          <td><input type="text" name="number1"> <b>l</b></td>
+          <td><input type="text" name="preis1"> <b>€</b></td>
+        </tr>
+        <tr>
+          <td><b>2</b></td>
+          <td><input type="text" name="number2"> <b>l</b></td>
+          <td><input type="text" name="preis2"> <b>€</b></td>
+        </tr>
+        <tr>
+          <td><b>3</b></td>
+          <td><input type="text" name="number3"> <b>l</b></td>
+          <td><input type="text" name="preis3"> <b>€</b></td>
+        </tr>
+        <tr>
+            <td><b>4</b></td>
+            <td><input type="text" name="number4"> <b>l</b></td>
+            <td><input type="text" name="preis4"> <b>€</b></td>
+          </tr>
+        
+      </table>
+      <br>
+    <input type="submit" name="ohneMwst" value="berechnen ohne Mwst">
+    <input type="reset" name="reset" value="zurücksetzen">
+    <input type="submit" name="mitMwst" value="berechnen mit Mwst">
+    </form>
+</body>
+</html>
